@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi nội dung nhiều phần tử </title>
+</head>
+<body>
+    <p>Đây là đoạn văn bản một</p>
+    <p>Đây là đoạn văn bản hai</p>
+    <p>Đây là đoạn văn bản ba</p>
+
+    <script>
+        var paragraphs = document.querySelectorAll("p");
+        paragraphs.forEach(function(paragraph) {
+            paragraph.textContent = "Updated paragraph";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số lượng phần tử </title>
+</head>
+<body>
+    <div>Phần tử div một</div>
+    <div>Phần tử div hai</div>
+    <div>Phần tử div ba</div>
+
+    <p id="result"></p>
+
+    <script>
+        var divElements = document.querySelectorAll("div");
+        var divCount = divElements.length;
+        var resultElement = document.getElementById("result");
+        resultElement.textContent = "Số lượng phần tử <div> trên trang là: " + divCount;
+    </script>
+</body>
+</html>
