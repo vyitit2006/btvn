@@ -68,13 +68,13 @@ th, td {
 
 th {
     background-color: #3498db; 
-    color: #fff; /* Màu chữ trắng cho tiêu đề bảng */
+    color: #fff; 
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Màu nền nhẹ cho các hàng chẵn trong bảng */
+    background-color: #f2f2f2; 
 }
 
 tr:hover {
-    background-color: #e1e1e1; /* Màu nền khi hover lên hàng trong bảng */
+    background-color: #e1e1e1; 
 }
