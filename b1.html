@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thay Đổi Nội Dung</title>
+    <title>Quản lý Sinh viên</title>
+    <link rel="stylesheet" href="b2.css">
 </head>
 <body>
-    <h1 id="title">Đây là tiêu đề ban đầu</h1>
-    <script src="b1.js"></script>
+    <h1>Quản lý Sinh viên</h1>
+    
+    <form id="studentForm">
+        <input type="hidden" id="studentId">
+        <label for="studentCode">Mã sinh viên:</label>
+        <input type="text" id="studentCode" required>
+        
+        <label for="studentName">Họ tên:</label>
+        <input type="text" id="studentName" required>
+        
+        <label for="studentGender">Giới tính:</label>
+        <select id="studentGender">
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+        
+        <label for="studentDOB">Ngày sinh:</label>
+        <input type="date" id="studentDOB" required>
+        
+        <label for="studentAddress">Quê quán:</label>
+        <input type="text" id="studentAddress" required>
+        
+        <button type="submit">Lưu</button>
+    </form>
+    
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Quê quán</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <script src="b3.js"></script>
 </body>
 </html>
